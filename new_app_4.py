@@ -37,7 +37,7 @@ df_raw = load_data()
 # =========================
 with st.sidebar:
     st.title("🏙️ AroundU")
-    st.caption("Beni Suef Business Intelligence")
+    # st.caption("Beni Suef Business Intelligence")
 
     selected = option_menu(
         "Main Menu", 
@@ -261,4 +261,5 @@ elif selected == "Location Logic":
     )
 
     fig_map.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
+
     st.plotly_chart(fig_map, use_container_width=True)
